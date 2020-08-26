@@ -1,0 +1,179 @@
+<!DOCTYPE html>	
+<html>
+<head>  
+
+<!-- Required Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Meta Tags for SEO -->
+<title>Deja bem vindo </title>
+<meta name="description" content="Comida feita com carinho e com gostinho de casa">
+<meta name="keywords" content="Bistrô, Restaurante, Almoço">
+
+
+<!-- Open Graph Meta for Facebook, WhatsApp etc. -->
+<meta property="og:type" content="website" />
+<meta property="og:image:height" content="279">
+<meta property="og:image:width" content="279">
+<meta property="og:title" content="Deja bem vindo">
+<meta property="og:description" content="Comida feita com carinho e com gostinho de casa">
+<meta property="og:image" content="https://demaisbistro.com.br/pwapp/bistro/og.png">
+<meta property="og:url" content="https://demaisbistro.com.br/pwapp/bistro/index.html">
+<meta property="og:site_name" content="Deja bem vindo" />
+
+<!-- Meta Tags for iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="=#FCF2D7">
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="./style.css" type="text/css">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+<!-- iOS Splash Screens -->
+<link href="./iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./iphoneplus_splash.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="./iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="./iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="./ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="./ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="./manifest.json">
+
+<!-- Meta Tags for Windows -->
+<meta name="msapplication-config" content="./browserconfig.xml" /> 
+<meta name="msapplication-TileColor" content="#FCF2D7">
+<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+
+<!-- Meta Theme Color -->
+<meta name="theme-color" content="#FCF2D7">
+
+<!-- Scripts -->
+<!--script1-->
+<!--script2-->
+<!--script3-->
+<!--script4-->
+
+
+</head>
+
+<body>
+
+<!-- WebApp iframe Starts -->
+<div class="main">
+	<iframe src="iframe.html" frameborder="0"> </iframe> 
+</div>
+<!-- WebApp iframe Ends-->
+
+<!-- Toast msg -->
+<div id="toast"> </div>	
+
+<!-- iPhone Install Popup Starts -->
+<div class="iospopup_overlay1" id="iospopup" style="display: none;">
+  <div class="iospopup_bottom">
+	<div id="iospopup_box">
+		<img src="./mstile-70x70.png" class="pwaicon"> 
+		<h4 class="pwa_title">Demais Bistrô <hr> </h4>
+		 Instale este WebApp na tela inicial do seu iPhone. Basta tocar <img id="share" src="https://i.imgur.com/wkTP6mv.png"> escolha Adicionar à tela inicial.
+	</div>
+	<div id="iospopup_arrow1"> </div>
+	<div id="iospopup_arrow2"> </div>
+	<input id="close_iospopup" type="checkbox" onclick="closeiospopup()">
+	<label for="close_iospopup" class="close">
+		<img id="close_iospopup" src="https://i.imgur.com/HWMllLs.png">
+	</label>
+  </div>
+</div>
+<!-- iPhone Install Popup Ends -->
+
+<!-- FB Popup Starts -->
+<div class="fbpopup_overlay1" id="fbpopup" style="display: none;">
+  <div class="fbpopup">
+	<div id="fbpopup_box">
+		<img src="./mstile-70x70.png" class="pwaicon">
+		<h4 class="pwa_title">Demais Bistrô <hr> </h4>	
+		Basta tocar em ••• mostrado no canto superior direito e selecionar Abrir no navegador Chrome / Safari e adicioná-lo facilmente à sua tela inicial para ter uma experiência de aplicativo.
+	</div>
+    <input id="close_fbpopup" type="checkbox" onclick="closefbpopup()">
+	<label for="close_fbpopup" class="close">
+		<img id="close_fbpopup" src="https://i.imgur.com/HWMllLs.png">
+	</label> 
+  </div>
+</div>
+<!-- FB Popup Ends -->
+
+<!-- Service Worker Starts -->
+<script src="./upup.min.js"> </script> 
+<script>
+  UpUp.start({
+    'content-url': 'offline.html',
+  });
+</script>
+<!-- Service Worker Ends -->
+
+<!-- Script Starts -->
+<script>
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone/i);
+    },
+};
+
+if (isMobile.Android()) {
+    document.getElementById('iospopup').style.display='none';
+}
+else if(isMobile.iOS() && !navigator.standalone) {
+    document.getElementById('iospopup').style.display='block';
+}      
+
+function closeiospopup() {
+    var checkBox = document.getElementById("close_iospopup");
+    var iospop = document.getElementById("iospopup");
+    if (checkBox.checked == true){
+      iospop.style.display = "none";
+    } else {
+       iospop.style.display = "block";
+    }
+}
+
+function closefbpopup() {
+    var checkBox2 = document.getElementById("close_fbpopup");
+    var fbpop = document.getElementById("fbpopup");
+    if (checkBox2.checked == true){
+       fbpop.style.display = "none";
+    } else {
+       fbpop.style.display = "block";
+    }
+}
+
+function isFacebookApp() { 
+var ua = navigator.userAgent || navigator.vendor || window.opera; 
+return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1); 
+} 
+if(isFacebookApp()){
+document.getElementById('fbpopup').style.display='block';
+}
+</script>
+
+<!-- Script Ends -->	
+
+</body>
+</html>

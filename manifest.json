@@ -1,0 +1,22 @@
+{
+    "name": "Demais Bistrô",
+    "short_name" : "Demais Bistrô",
+    "start_url": "index.html?utm_source=homescreen",
+    "scope" : "./",
+    "icons": [
+        {
+            "src": "./android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FCF2D7",
+    "background_color": "#FCF2D7",
+    "display": "standalone",
+	"gcm_sender_id": "103953800507"
+}
