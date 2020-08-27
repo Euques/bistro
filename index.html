@@ -69,6 +69,19 @@
 <!--script3-->
 <!--script4-->
 
+<!--One Signal Web Push-->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "1133dd34-356d-48a4-970c-d85bb1fdd36c",
+    });
+  });
+</script>	
+<!--one signal fim-->
+	
+
 
 </head>
 
@@ -175,18 +188,6 @@ document.getElementById('fbpopup').style.display='block';
 
 <!-- Script Ends -->	
 
-<!-- Notifications TruePush -->
-<script type="application/javascript" src="https://sdki.truepush.com/sdk/v2.0.2/app.js" async></script>
-<script>
-var truepush = window.truepush || [];
-truepush.push(function(){
-    truepush.Init({
-        id: "5f46bfb1ab9adfbe0d59fa26"
-        }, function(error){
-          if(error) console.error(error);
-        })
-    })
-</script>
 	
 </body>
 </html>
